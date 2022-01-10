@@ -10,10 +10,12 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-if="arrayMail.length == 10 ? 'mail' : '' " v-for="mail in arrayMail">
-            {{  mail  }}</li>
-        </ul>
+        <div v-if="arrayMail.length == 10 ? 'mail' : '' ">
+            <ul>
+                <li v-for="mail in arrayMail">
+                {{  mail  }}</li>
+            </ul>
+        </div>
 
     </div>
     <script src="js/script.js"></script>
